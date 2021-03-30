@@ -80,7 +80,6 @@ class Main extends React.Component {
       this.setState(prevState => {
         const candles = prevState.candles.filter(candle => candle.id !== updateCandle.id)
         candles.unshift(updatedCandle)
-        console.log(updatedCandle);
         return {candles}
       })
     })
